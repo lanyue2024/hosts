@@ -1,2 +1,2 @@
 # hosts
-被封域名集合，搭配dnsmasq/adguardhome和sniproxy使用。
+被封网站集合，搭配dnsmasq/adguardhome和sniproxy使用。
