@@ -1,0 +1,22 @@
+name: update
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - hosts.txt
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          bash update.sh
+          git config user.name "github-actions[bot]"
+          # https://api.github.com/users/github-actions%5Bbot%5D
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dnsmasq.conf adguardhome.txt
+          git commit -m "generated"
+          git push
+
+        
