@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file="$1"
+file="hosts.txt"
 tmpfile=$(mktemp)
 dnsmasq="dnsmasq.conf"
 adguardhome="adguardhome.txt"
