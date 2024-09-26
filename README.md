@@ -1,6 +1,9 @@
 # hosts
 被封网站集合，搭配dnsmasq/adguardhome和sniproxy使用。
 
+sniproxy：https://github.com/lanyue2024/h2-tunnel
+
+
 ## dnsmasq
 修改<dnsmasq.conf>中这行的IP为sniproxy的IP地址。
 ```
