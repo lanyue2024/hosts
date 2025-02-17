@@ -1,5 +1,5 @@
 # hosts
-被封网站集合，搭配dnsmasq/adguardhome和sniproxy使用。
+搭配dnsmasq/adguardhome和sniproxy使用。
 
 ## dnsmasq
 修改<dnsmasq.conf>中的IP为sniproxy地址。
