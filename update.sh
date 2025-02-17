@@ -4,8 +4,8 @@ IP="100.85.41.5"
 file="hosts.txt"
 tmpfile=$(mktemp)
 dnsmasq="dnsmasq.conf"
-adguardhome="adguardhome.txt"
-adguardhome100="adguardhome100.txt"
+adguardhome="adguardhome.conf"
+unbound="unbound.conf"
 t=$(date)
 
 if [ -f "$file" ]; then
@@ -15,14 +15,15 @@ if [ -f "$file" ]; then
     echo "# $t" >$adguardhome
     echo "" >>$adguardhome
 
-    echo "# $t" >$adguardhome100
-    echo "" >>$adguardhome100
+    echo "# $t" >$unbound
+    echo "" >>$unbound
 
     cat $file |tr -d '[:blank:]'|egrep -v '^#|^$' >$tmpfile
     while IFS='' read -r line; do
         echo "address=/${line}/$IP" >>$dnsmasq
         echo "||${line}^\$dnsrewrite=$IP" >>$adguardhome
-        echo "||${line}^\$client=100.0.0.0/8,dnsrewrite=$IP" >>$adguardhome100
+        echo "local-zone: \"${line}\" redirect" >>$unbound
+        echo -e "local-data: \"${line} 30 IN A $IP\" \n" >>$unbound
     done < "$tmpfile"
 fi
 
