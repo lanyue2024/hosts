@@ -28,11 +28,6 @@ discord.com
 discord.gg
 discordapp.com
 
-# spotify
-www.spotify.com
-spclient.wg.spotify.com
-open.spotify.com
-
 # github
 github.com
 githubassets.com
