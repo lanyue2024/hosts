@@ -1,5 +1,6 @@
 #!/bin/bash
 
+IP="100.85.41.5"
 file="hosts.txt"
 tmpfile=$(mktemp)
 dnsmasq="dnsmasq.conf"
@@ -10,8 +11,6 @@ t=$(date)
 if [ -f "$file" ]; then
     echo "# $t" >$dnsmasq
     echo "" >>$dnsmasq
-    echo "address=/sniproxy.local/IP" >>$dnsmasq
-    echo "" >>$dnsmasq
 
     echo "# $t" >$adguardhome
     echo "" >>$adguardhome
@@ -19,11 +18,11 @@ if [ -f "$file" ]; then
     echo "# $t" >$adguardhome100
     echo "" >>$adguardhome100
 
-    cat $file |tr -d '[:blank:]'|sort -u |egrep -v '^#|^$' >$tmpfile
+    cat $file |tr -d '[:blank:]'|egrep -v '^#|^$' >$tmpfile
     while IFS='' read -r line; do
-        echo "cname=${line},sniproxy.local,10" >>$dnsmasq
-        echo "||${line}^\$dnsrewrite=sniproxy.local" >>$adguardhome
-        echo "||${line}^\$client=100.0.0.0/8,dnsrewrite=sniproxy100.local" >>$adguardhome100
+        echo "address=/${line}/$IP" >>$dnsmasq
+        echo "||${line}^\$dnsrewrite=$IP" >>$adguardhome
+        echo "||${line}^\$client=100.0.0.0/8,dnsrewrite=$IP" >>$adguardhome100
     done < "$tmpfile"
 fi
 
