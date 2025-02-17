@@ -18,7 +18,7 @@ jobs:
           git config user.name "github-actions[bot]"
           # https://api.github.com/users/github-actions%5Bbot%5D
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dnsmasq.conf adguardhome.txt
+          git add dnsmasq.conf adguardhome.txt adguardhome100.txt
           git commit -m "generated"
           git push
 
