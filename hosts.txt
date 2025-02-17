@@ -16,6 +16,7 @@ duckduckgo.com
 
 # docker
 hub.docker.com
+docker.io
 production.cloudflare.docker.com
 
 # pixiv
