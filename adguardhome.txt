@@ -1,4 +1,4 @@
-# Mon Feb 17 02:42:30 UTC 2025
+# Mon Feb 17 03:15:02 UTC 2025
 
 ||cdninstagram.com^$dnsrewrite=sniproxy.local
 ||discord.com^$dnsrewrite=sniproxy.local
@@ -19,7 +19,6 @@
 ||huggingface.co^$dnsrewrite=sniproxy.local
 ||instagram.com^$dnsrewrite=sniproxy.local
 ||onedrive.live.com^$dnsrewrite=sniproxy.local
-||open.spotify.com^$dnsrewrite=sniproxy.local
 ||pixiv.net^$dnsrewrite=sniproxy.local
 ||production.cloudflare.docker.com^$dnsrewrite=sniproxy.local
 ||pximg.net^$dnsrewrite=sniproxy.local
@@ -28,13 +27,11 @@
 ||reddit.com^$dnsrewrite=sniproxy.local
 ||redditmedia.com^$dnsrewrite=sniproxy.local
 ||redditstatic.com^$dnsrewrite=sniproxy.local
-||spclient.wg.spotify.com^$dnsrewrite=sniproxy.local
 ||steamcommunity.com^$dnsrewrite=sniproxy.local
 ||twimg.com^$dnsrewrite=sniproxy.local
 ||twitter.com^$dnsrewrite=sniproxy.local
 ||wikimedia.org^$dnsrewrite=sniproxy.local
 ||wikipedia.org^$dnsrewrite=sniproxy.local
-||www.spotify.com^$dnsrewrite=sniproxy.local
 ||x.com^$dnsrewrite=sniproxy.local
 ||youtube.com^$dnsrewrite=sniproxy.local
 ||ytimg.com^$dnsrewrite=sniproxy.local

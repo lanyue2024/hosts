@@ -1,4 +1,4 @@
-# Mon Feb 17 02:42:30 UTC 2025
+# Mon Feb 17 03:15:02 UTC 2025
 
 ||cdninstagram.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||discord.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
@@ -19,7 +19,6 @@
 ||huggingface.co^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||instagram.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||onedrive.live.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
-||open.spotify.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||pixiv.net^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||production.cloudflare.docker.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||pximg.net^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
@@ -28,13 +27,11 @@
 ||reddit.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||redditmedia.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||redditstatic.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
-||spclient.wg.spotify.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||steamcommunity.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||twimg.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||twitter.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||wikimedia.org^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||wikipedia.org^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
-||www.spotify.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||x.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||youtube.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
 ||ytimg.com^$client=100.0.0.0/8,dnsrewrite=sniproxy100.local
