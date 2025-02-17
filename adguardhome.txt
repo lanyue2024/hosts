@@ -1,9 +1,10 @@
-# Mon Feb 17 02:39:21 UTC 2025
+# Mon Feb 17 02:42:30 UTC 2025
 
 ||cdninstagram.com^$dnsrewrite=sniproxy.local
 ||discord.com^$dnsrewrite=sniproxy.local
 ||discord.gg^$dnsrewrite=sniproxy.local
 ||discordapp.com^$dnsrewrite=sniproxy.local
+||docker.io^$dnsrewrite=sniproxy.local
 ||duckduckgo.com^$dnsrewrite=sniproxy.local
 ||ggpht.com^$dnsrewrite=sniproxy.local
 ||github.com^$dnsrewrite=sniproxy.local
