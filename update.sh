@@ -15,15 +15,15 @@ if [ -f "$file" ]; then
     echo "# $t" >$adguardhome
     echo "" >>$adguardhome
 
-    echo "# $t" >$unbound
-    echo "" >>$unbound
+    echo -e "# $t \n" >$unbound
+    echo "server: " >>$unbound
 
     cat $file |tr -d '[:blank:]'|egrep -v '^#|^$' >$tmpfile
     while IFS='' read -r line; do
         echo "address=/${line}/$IP" >>$dnsmasq
         echo "||${line}^\$dnsrewrite=$IP" >>$adguardhome
-        echo "local-zone: \"${line}\" redirect" >>$unbound
-        echo -e "local-data: \"${line} 30 IN A $IP\" \n" >>$unbound
+        echo "    local-zone: \"${line}\" redirect" >>$unbound
+        echo -e "    local-data: \"${line} 30 IN A $IP\" \n" >>$unbound
     done < "$tmpfile"
 fi
 
