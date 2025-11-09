@@ -60,3 +60,7 @@ reddit.com
 redd.it
 redditmedia.com
 redditstatic.com
+
+# signal
+signal.org
+
