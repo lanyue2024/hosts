@@ -4,6 +4,8 @@ huggingface.co
 # google
 google.com
 google.com.hk
+google.com.sg
+google.co.jp
 gstatic.com
 googleapis.com
 googleusercontent.com
