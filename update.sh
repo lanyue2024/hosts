@@ -4,7 +4,7 @@ IP="192.168.1.8"
 
 # for adguardhome
 CLIENT="192.168.0.0/16"
-IP2="100.100.213.50"
+IP2="100.85.41.5"
 CLIENT2="100.64.0.0/10"
 
 file="hosts.txt"
