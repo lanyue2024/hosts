@@ -14,6 +14,7 @@ ytimg.com
 ggpht.com
 googlevideo.com
 gvt1.com
+pkg.dev
 
 # duckduckgo
 duckduckgo.com
