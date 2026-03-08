@@ -70,9 +70,6 @@ redditstatic.com
 # signal
 signal.org
 
-# spotify
-spotify.com
-
 # proton
 proton.me
 protonvpn.com
