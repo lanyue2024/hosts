@@ -73,3 +73,6 @@ signal.org
 # proton
 proton.me
 protonvpn.com
+
+# hacker news
+news.ycombinator.com
