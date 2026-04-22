@@ -76,3 +76,7 @@ protonvpn.com
 
 # hacker news
 news.ycombinator.com
+
+# openai
+openai.com
+chatgpt.com
