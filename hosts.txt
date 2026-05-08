@@ -80,3 +80,13 @@ news.ycombinator.com
 # openai
 openai.com
 chatgpt.com
+
+# claude
+claude.ai
+anthropic.com
+
+# microsoft copilot
+copilot.microsoft.com
+
+# perplexity
+perplexity.ai
