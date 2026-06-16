@@ -16,6 +16,7 @@ googlevideo.com
 gvt1.com
 pkg.dev
 golang.org
+google
 
 # duckduckgo
 duckduckgo.com
